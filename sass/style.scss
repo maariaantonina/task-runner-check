@@ -1,0 +1,111 @@
+/*Variables*/
+$font-one: 'Noto Serif',
+serif;
+$font-two: 'Montserrat',
+sans-serif;
+$font-three: 'Roboto Slab',
+serif;
+$font-four: 'Pacifico',
+cursive;
+/*logo*/
+
+$color-one: #777;
+$color-two: #fed136;
+
+/*Global*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-one;
+    color: $color-one;
+}
+
+/*Splash*/
+.splash {
+    background-image: url("../images/splash-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+
+    .navbar {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .navbar-brand {
+            text-decoration: none;
+            font-family: $font-four;
+            color: $color-two;
+            font-size: 26px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin-right: 36px;
+
+                a {
+                    text-decoration: none;
+                    font-family: $font-two;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .splash-inner {
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .page-subtitle {
+            font-family: $font-one;
+            font-size: 40px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .page-title {
+            font-family: $font-two;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 60px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: $color-two;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            font-family: $font-two;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-top: 20px;
+            height: 65px;
+            width: 240px;
+            padding: 20px;
+        }
+
+    }
+}
