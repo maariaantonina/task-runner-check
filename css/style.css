@@ -158,7 +158,7 @@ section {
   text-align: center;
 }
 
-h4 {
+.portfolio h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -166,9 +166,42 @@ h4 {
   margin-bottom: 0;
 }
 
-p {
+.portfolio p {
   line-height: 1;
   margin-top: 0;
   margin-bottom: 80px;
+}
+
+.footer-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.footer-inner ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-inner ul li {
+  display: inline-block;
+  font-size: 0;
+}
+
+.footer-inner i {
+  margin-right: 10px;
+  font-size: 18px;
+  background: #000;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
