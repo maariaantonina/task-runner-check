@@ -219,6 +219,8 @@ section {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .splash .navbar ul {
     text-align: center;
@@ -227,8 +229,7 @@ section {
     margin-right: 18px;
   }
   .splash .splash-inner .page-subtitle {
-    font-size: 18px;
-    margin: 15px auto;
+    font-size: 24px;
   }
   .splash .splash-inner .page-title {
     font-size: 30px;
