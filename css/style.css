@@ -120,6 +120,7 @@ section {
   padding: 20px;
 }
 
+/*Services*/
 .services {
   text-align: center;
 }
@@ -151,8 +152,10 @@ section {
   font-size: 14px;
   font-family: "Roboto Slab", serif;
   padding: 0 15px;
+  margin-bottom: 40px;
 }
 
+/*Portfolio*/
 .portfolio {
   background-color: #f7f7f7;
   text-align: center;
@@ -172,6 +175,7 @@ section {
   margin-bottom: 80px;
 }
 
+/*Footer*/
 .footer-inner {
   display: -ms-flexbox;
   display: flex;
@@ -203,5 +207,40 @@ section {
   border-radius: 50%;
   color: #fff;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 36px 0;
+  }
+  .splash .navbar {
+    padding-top: 20px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .splash .navbar ul {
+    text-align: center;
+  }
+  .splash .navbar ul li {
+    margin-right: 18px;
+  }
+  .splash .splash-inner .page-subtitle {
+    font-size: 18px;
+    margin: 15px auto;
+  }
+  .splash .splash-inner .page-title {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  .splash .splash-inner .btn {
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+  }
+  .services i {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
