@@ -4,7 +4,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -47,10 +48,12 @@ section {
 
 .splash .navbar {
   padding-top: 50px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .splash .navbar .navbar-brand {
@@ -84,7 +87,8 @@ section {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -121,20 +125,20 @@ section {
 }
 
 .services {
-  text-align: center;
+  height: 570px;
 }
 
 .services i {
   font-size: 35px;
   line-height: 35px;
   color: #fed136;
+  position: relative;
   border: 2px solid #fed136;
   border-radius: 50%;
   width: 75px;
   height: 75px;
+  text-align: center;
   padding: 15px;
-  display: inline-block;
-  margin-bottom: 25px;
 }
 
 .services h4 {
@@ -143,32 +147,11 @@ section {
   font-size: 18px;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 1em;
 }
 
 .services p {
   text-align: center;
   font-size: 14px;
   font-family: "Roboto Slab", serif;
-  padding: 0 15px;
-}
-
-.portfolio {
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #000;
-  margin-bottom: 0;
-}
-
-p {
-  line-height: 1;
-  margin-top: 0;
-  margin-bottom: 80px;
 }
 /*# sourceMappingURL=style.css.map */
